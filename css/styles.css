@@ -69,8 +69,30 @@ ul {
     margin: -1px;
 }
 
+/* main nav */
+.main-nav {
+    display: flex;
+    align-self: center;
+}
+
 /* site nav */
+.site-nav {
+    display: flex;
+}
+
+/* .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+} */
+
+.site-nav .item+ .item {
+    margin-left: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     letter-spacing: 0.02em;
 
@@ -89,8 +111,19 @@ ul {
 }
 
 /* контакти */
-.auth-nav .tel,
-.auth-nav .mailto {
+.auth-nav {
+    display: flex;
+}
+
+.auth-nav .item+ .item {
+    margin-left: 50px;
+}
+
+.auth-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
 
     font-weight: 500;
@@ -99,13 +132,8 @@ ul {
     text-decoration: none;
 }
 
-.auth-nav .tel:hover,
-.auth-nav .tel:focus {
-    color: var(--accent-color);
-}
-
-.auth-nav .mailto:hover,
-.auth-nav .mailto:focus {
+.auth-nav .link:hover,
+.auth-nav .link:focus {
     color: var(--accent-color);
 }
 
