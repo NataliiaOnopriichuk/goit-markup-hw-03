@@ -9,6 +9,9 @@
     --hover-blue-color:#188CE8;
 }
 
+header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 body {
     background-color: var(--primary-white-color);
@@ -30,7 +33,6 @@ margin-right: auto;
 width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
-outline: 2px solid tomato;
 }
 
 /* logo */
@@ -390,8 +392,9 @@ ul {
 .work-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    gap: 30px;
 }
+
 .work-list .project-title {
     margin-bottom: 4px;
 
@@ -404,15 +407,6 @@ ul {
 
 .work-list .item {
     margin-bottom: 20px;
-}
-
-.flex-element {
-    border: 1px solid #EEEEEE;
-}
-
-.flex-element {
-    width: 370px;
-    margin: 15px;
 }
 
 .work-list .project-text {
